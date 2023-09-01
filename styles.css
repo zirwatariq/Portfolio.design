@@ -1,0 +1,664 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root {
+    --mainColor: #000000;
+    --purpleColor: #5B4252;
+    --maroonColor: #481E15;
+    --greenColor: #172F1B;
+    --brownColor: #492B1B; 
+  }
+
+  /* typography */
+  html{
+    font-family: "Inter", Helvetica, sans-serif;
+    font-variation-settings: "wght" 400;
+    line-height: 1.5em; 
+    font-size: 1rem;
+    }
+
+    body{
+        max-width: 36rem;  
+        margin: 0 auto;
+        
+    }
+
+   /* skip to main button */ 
+  #skip {
+    margin: -1rem auto;
+    display: block;
+    z-index: 1001;
+    top: -1rem;
+    position: relative;
+  }
+  #skip:focus {
+    text-decoration: underline 1px solid #000;
+}
+#skip:hover{
+    text-decoration: underline 1px solid #000;
+}
+
+  /* top navigation */
+.header {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    height: 4rem;
+    position: fixed;
+    padding: 0.5rem;
+    display: flex;
+    /*! align-items: center; */
+}
+    /*  
+    width: 100%;
+    z-index: 3;
+  }
+  */
+  .header .logo {
+    display: block;
+    /*! float: left; */
+    width: 56%;
+    /*! padding: 0rem; */
+    margin-top: 0.3rem;
+}
+/* Styles for the hamburger button */
+.menubt {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  /*! width: 729%; */
+  max-width: 3.5rem;
+  margin-top: 0.8rem;
+}
+
+button {
+  background: none;
+  border: none;
+  /*! width: 138%; */
+}
+
+/* Styles for the navigation drawer */
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -300px; /* Off-screen by default */
+  width: 250px; /* Set your desired width */
+  height: 100%;
+  background-color: #000000; /* Set your desired background color */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s ease-in-out;
+}
+
+/* Styles for the navigation drawer when it's open */
+.drawer.open {
+  right:0;
+  width: 340px;
+}
+
+/* Styles for the close button in the navigation drawer */
+.closeBtn {
+  display: block;
+  background: none;
+  border: none;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff; /* Set your desired color */
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 310px;
+
+}
+
+/* Styles for the navigation links */
+.bar {
+  list-style: none;
+  /*! padding: 0; */
+  display: flex;
+  flex-direction: column;
+  /*! align-items: center; */
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.bar li {
+  padding: 15px 20px 5px 15px;
+  /*border-bottom: 1px solid #ffffff;*/
+ 
+}
+
+.bar li:last-child {
+  border-bottom: none;
+}
+
+.bar a {
+  text-decoration: none;
+  color: #ffffff; /* Set your desired color */
+  display: block;
+  transition: background-color 0.3s ease-in-out;
+}
+
+
+/* Styles for the navigation dropdown */
+.navdropdown {
+  list-style: none;
+  margin-left: 20px;
+  padding: 0;
+  display: none; /* Hidden by default */
+  background-color: #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  position: absolute;
+  z-index: 1;
+  left: 100%; /* Position the submenu to the right of the parent */
+  top: 0; /* Align the submenu with the top of the parent */
+
+}
+
+.bar li:hover .navdropdown {
+  display: block; /* Show the dropdown on hover */
+}
+
+.name {
+  color: #fff;
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+  /* hamburger */
+  /* hamburger menu 
+  button {
+    background: transparent;
+    border:none;
+    padding: 1rem;
+  }
+  .menubt {
+    cursor: pointer; 
+    width: 3rem;
+    margin-left: 7rem;
+
+}*/
+
+
+
+/*hero banner */
+.herobanner{
+    padding: 5rem 1rem 5rem 1rem;
+    background-color: #000000;
+}
+.herobanner1{
+  padding: 1rem 1rem 0 1rem;
+  background-color: #000000;
+}
+.herotitle{
+    color: #fff;
+    font-variation-settings: "wght" 800;
+    font-size: 3rem;
+    line-height: 1em;
+}
+.herointro{
+    color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.scrollbutton{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+    margin-top: -4rem;
+}
+.links{
+    color: #fff;
+}
+.links1{
+  color: #000000;
+}
+
+/* the homepage heading padding*/
+.headings{
+    padding: 1rem;}
+
+/*headings*/
+h1{
+    font-family: "Inter", Helvetica, sans-serif;
+    color: #000000;
+    line-height: 1.1em;
+    font-size: 1.44rem;
+    font-variation-settings: "wght" 700;
+    /*! margin-top: 0.5rem; */
+}
+h2{
+    font-family: "Inter", Helvetica, sans-serif;
+    color: #393939;
+    line-height: 1.1em;
+    font-size: 1.2rem;
+    font-variation-settings: "wght" 500;
+    /*! margin-top: 0.5rem; */
+}
+h3{
+    font-family: "Inter", Helvetica, sans-serif;
+    color: #000000;
+    line-height: 1.1em;
+    font-size: 1rem;
+    font-variation-settings: "wght" 700;
+}
+
+
+/*homepage portfolio */
+.tags {
+  grid-column-gap: 0.6rem;
+  grid-row-gap: 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1.125rem;
+  max-width: 30rem;
+  padding-bottom: 1.625rem;
+ 
+  
+}
+.tag {
+  color: #fff;
+  border: 1px solid #ffffff;  border-radius: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.7rem;
+  display: inline-block;
+}
+.contentintro1 {
+  padding: 1rem;
+}
+.portfoliosample1{
+    margin-top: 2.25rem;
+    margin-bottom: 2rem;
+    background-color: #5B4252; 
+    padding: 0rem 0rem 2rem 0rem;
+}
+.portfoliosample2{
+    margin-top: 2.25rem;
+    margin-bottom: 2rem;
+    background-color: #481E15; 
+    padding: 0rem 0rem 2rem 0rem;
+}
+.portfoliosample3{
+    margin-top: 2.25rem;
+    margin-bottom: 2rem;
+    background-color: #172F1B; 
+    padding: 0rem 0rem 2rem 0rem;
+}
+.portfoliosample4{
+    margin-top: 2.25rem;
+    margin-bottom: 2rem;
+    background-color: #492B1B; 
+    padding: 0rem 0rem 2rem 0rem;
+}
+.intropara1{
+    color: #fff;
+    padding: 0.9rem 1rem;
+    font-variation-settings: "wght" 300;
+}
+.intropara2{
+    color: #fff;
+    font-variation-settings: "wght" 300;
+    padding: 0rem 0rem 2rem 0rem;
+}
+/*intro h2 style class*/
+.introtitle{
+color: #fff;
+padding: 0rem 1rem;
+line-height: 1.1em;
+font-size: 1.2rem;
+font-variation-settings: "wght" 700;
+}
+/*explore more button styling */
+.exploremore{
+   padding: 0.7rem;
+    margin-left: 6rem;
+    color: #000000;
+    background-color: #fff;
+   /* border-radius: 0.4rem; */
+    text-decoration: none;
+    font-variation-settings: "wght" 700; /*bold */
+    margin-top: -1rem;
+}
+
+/* ADDITIONAL WORK STYLING */
+.printmedia {
+border: 1px solid #000000;
+border-radius: 6px;
+padding: 0rem 0rem 2rem 0rem;
+margin-top: 1rem;
+margin-bottom: 2.5rem;
+}
+.description {
+    color: #000;
+    font-variation-settings: "wght" 400;
+    padding: 0.7rem 1rem 2rem 1rem;
+    
+}
+.exploremore1{
+    padding: 0.8rem;
+     margin-left: 6rem;
+     color: #ffffff;
+     background-color: #000000;
+     /*border-radius: 0.4rem;*/
+     text-decoration: none;
+     font-variation-settings: "wght" 700; /*bold */
+     /*! margin-top: -46rem; */
+ }
+ .headingadditional {
+    padding: 1rem;
+ }
+ .introtitle1 {
+    color: #000000;
+    padding: 0rem 1rem;
+    line-height: 1.1em;
+    font-size: 1.2rem;
+    font-variation-settings: "wght" 700; 
+    margin-top: 2rem;
+ }
+
+ .introimage1{
+   border-bottom: 1px solid #000;
+   background-color: #000;
+   
+ }
+ /*about page */
+ .herotwo2{
+  /*! max-width: 36rem; */
+  margin-top: 1rem;
+ }
+ .role{
+  font-variation-settings: "wght" 500;
+ }
+ .imagem{
+  margin-bottom: -0.3rem;
+ }
+ 
+ .herointro2 {
+  max-width: 80rem;
+  color: #fff;
+ }
+
+/*footer */
+footer{
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    box-shadow: inset 1px #000;
+    /*! gap: 4rem; */
+}
+.foot1{
+  padding: 2rem;
+  max-width: 22rem;
+  line-height: 1.7rem;
+  margin-left: 6rem;
+}
+.foot2{
+  max-width: 17rem; 
+  padding: 2rem;
+  margin-top: 2rem;
+  margin-left: 40rem;
+}
+.backtop{
+  cursor: pointer;
+  display: block;
+  position: absolute;
+  margin-left: 42rem;
+  width: 5%;
+  margin-top: -2rem;
+}
+/*social icons */
+
+.sicon {
+  width: 50px; /* Adjust the width value to set the desired size */
+  height: 50px; /* Adjust the height value to maintain the aspect ratio */
+  margin-top: 1rem;
+}
+.social{
+  margin-left: -0.10rem;
+}
+.social ul{
+
+    display: flex; /* Use flexbox to arrange the icons in a row */
+    flex-direction: row;
+  }
+.social li{
+    list-style: none; 
+  } 
+
+  /*about page*/
+  .resume{
+    padding: 1rem;
+  }
+  .grad1 {
+    margin-top: 1rem;
+    
+  }
+  /*
+  ul{
+    margin-top: 0.7rem;
+    margin-left: 1rem;
+  }
+  */
+  /*motion graphics page */
+  .motion {
+    padding: 1rem;
+  }
+  .logoanimation {
+    padding: 1rem;
+  }
+.video {
+  margin-top: 1rem;
+}
+
+/* desktop version */
+
+  @media (min-width: 900px) {
+    body{
+    max-width: 100rem; 
+    font-size: 1.188rem;
+    margin: 0 auto; 
+    line-height: 1.6em;}
+
+
+ .header {
+    max-width: 100rem;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 1.5rem 2rem;
+    z-index: 1000;
+    align-items: center;
+    position: fixed;
+ }
+ /*header logo */
+ .header .logo {
+  width: 15%;
+  margin-left: 3rem;
+  }
+  /*navigation */
+  .closeBtn{
+    display: none;
+  }
+.bar {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-right: 2rem;
+    
+    }
+   
+    .bar li a{
+      color: #000;
+      font-size: 1.05rem;
+      font-variation-settings: "wght" 450;
+      text-decoration: none;
+      margin-right: 1.7rem;
+      transition: all .2s;
+    }
+    button {
+      display: none;
+    }
+    .navdropdown li {
+    position:absolute;
+    width: 122px;
+    background-color: #f9f7f3;
+    display: none;
+  }
+  .header .navigation ul li :hover > ul{
+    display: initial;
+  }
+
+
+     /* navigation menu 
+     .bar {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      padding: 1rem;
+      margin-top: 9.5rem;
+  }
+
+  .bar li a{
+      font-size: 1.1rem;
+      font-variation-settings: "wght" 600;
+      text-decoration: none;
+      color: #000;
+      padding: 1.5rem;
+    
+  }
+  .bar li ul {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: #e6e6e6;
+      padding: 1rem;
+      list-style: none;
+      max-width: 20rem;
+  }*/
+
+
+ .heroone{
+  max-width: 10rem;
+  margin-left: 6rem;
+ }
+ .herobanner {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 10rem 1rem 6rem 0rem;
+  
+  height: 85vh;
+  align-items: center;
+ }
+ .herotwo {
+  max-width: 30rem;
+  margin-left: 32rem;
+  margin-top: 2rem;
+ }
+ .herotitle {
+  font-size: 8rem;
+ }
+ .name{
+  font-size: 1.5rem;
+ }
+ /*headings */
+ h1{
+  font-size: 2.188rem;
+}
+h2{
+  font-size: 1.75rem;
+}
+.introtitle {
+  font-size: 2.063rem;
+  margin-left: -1rem;
+}
+h3{
+  font-size: 1rem;
+}
+.headings{
+  padding: 0rem 0 2rem 6.2rem;}
+.headingadditional {
+  padding: 2rem 6.5rem;
+}
+
+.portfoliosample1{
+display: flex;
+flex-direction: row;
+margin: 0 auto;
+padding: 2rem 1rem 1rem;
+align-items: center;
+}
+.portfoliosample2{
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 2rem 1rem 1rem;
+  align-items: center;
+  }
+  .portfoliosample3{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 2rem 1rem 1rem;
+    align-items: center;
+    }
+    .portfoliosample4{
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 2rem 1rem 1rem;
+      align-items: center;
+      }
+.contentintro1{
+  max-width: 40rem;
+  padding: 2rem 2rem 2rem 6.5rem;
+}
+.contentintro2{
+  max-width: 40rem;
+  padding: 2rem;
+}
+
+.exploremore {
+  margin-left: 0rem;
+}
+.imageintro{
+  width: 40%;
+  margin-left: 2rem;
+  align-content: center;
+}
+.imageintro2{
+  width: 43%;
+  margin-left: 2rem;
+ margin-right: 4rem;
+}
+.printmedia{
+max-width: 30rem;
+}
+.flexcontent{
+
+  display: flex;
+  flex-direction: row;
+  gap: 6rem;
+  margin-left: 11rem;
+}
+
+
+/*about page */
+.resume {
+    padding: 3rem;
+}
+.herotwo2 {
+  max-width: 36rem;
+  margin-left: 20rem;
+}
+
+.exploremore1 {
+ margin-left: 12rem;
+}
+
+/*scrool button*/
+.scrollbutton {
+    width: 7%;}
+}
+

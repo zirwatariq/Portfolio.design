@@ -176,7 +176,7 @@ button {
 }
 /* this is the top name */
 .name {
-  color: #fff;
+  color: #909090;
   font-size: 0.9rem;
   margin-top: 1rem;
 }
@@ -201,6 +201,9 @@ button {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+.or {
+  color: #909090;
+}
 .scrollbutton{
     display: block;
     margin: 0 auto;
@@ -216,7 +219,7 @@ button {
 
 /* the homepage heading padding*/
 .headings{
-    padding: 1rem;}
+    padding: 1rem 1.5rem;}
 
 /*headings*/
 h1{
@@ -265,7 +268,7 @@ h3{
 }
 
 .contentintro1 {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   margin-top: -1.5rem;
 }
 .contentintro2-2 {
@@ -378,14 +381,14 @@ margin-bottom: 2rem;
  }
  /*about page */
  .herotwo2{
-  /*! max-width: 36rem; */
   margin-top: 1rem;
  }
  .role{
   font-variation-settings: "wght" 500;
  }
  .imagem{
-  margin-bottom: -0.3rem;
+  margin-bottom: 6.7rem;
+  margin-right: 11rem;
  }
  
  .herointro2 {
@@ -412,7 +415,6 @@ footer{
 }
 .foot2{
   max-width: 17rem; 
-  /*! padding: 1rem; */
   margin-top: 3rem;
   margin-left: 0.5rem;
 }
@@ -437,7 +439,6 @@ footer{
   margin-left: -0.10rem;
 }
 .social ul{
-
     display: flex; /* Use flexbox to arrange the icons in a row */
     flex-direction: row;
   }
@@ -451,14 +452,11 @@ footer{
   }
   .grad1 {
     margin-top: 1rem;
-    
   }
-  /*
-  ul{
-    margin-top: 0.7rem;
-    margin-left: 1rem;
+  .herointro2- {
+    /*! padding: 3rem; */
+    color: #fff;
   }
-  */
   /*motion graphics page */
   .motion {
     padding: 1rem;
@@ -498,7 +496,6 @@ footer{
   width: 100%;
   margin-left: 4rem;
   max-width: 10rem;
-
   margin-bottom: 1rem;
   }
   /*navigation */
@@ -509,7 +506,6 @@ footer{
     display: flex;
     flex-direction: row;
     list-style: none;
-  
     margin-top: 1.5rem;
     position: relative;
     margin-left: 5rem;
@@ -533,7 +529,7 @@ footer{
       width: 65rem;
       position: absolute;
       transition: none;
-       border: none;
+      border: none;
       margin-right: 3rem;
       margin-top: -0.5rem;
       box-shadow: none;
@@ -550,6 +546,12 @@ footer{
   max-width: 10rem;
   margin-left: 6rem;
  }
+ .heroonee{
+  max-width: 40rem;
+  margin-left: 6rem;
+  /*! padding: 3rem; */
+  margin-bottom: 10rem;
+ }
  .herobanner {
   display: flex;
   flex-direction: row;
@@ -560,14 +562,29 @@ footer{
  }
  .herotwo {
   max-width: 30rem;
-  margin-left: 32rem;
+  margin-left: 35rem;
   margin-top: 2rem;
  }
  .herotitle {
-  font-size: 8rem;
+  font-size: 7rem;
+ }
+ .herotitle1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-left: -0.3rem;
+  
+ }
+ .herobanner1 {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 20rem 1rem 6rem 0rem;
+  height: 85vh;
+  align-items: center;
+  /*! padding: 3rem; */
  }
  .name{
-  font-size: 1.5rem;
+  font-size: 1.4rem;
  }
  /*headings */
  h1{
@@ -620,6 +637,7 @@ align-items: center;
 .contentintro1{
   max-width: 40rem;
   padding: 2rem 2rem 2rem 6.5rem;
+  margin-left: 6rem;
 }
 .contentintro2{
   max-width: 40rem;

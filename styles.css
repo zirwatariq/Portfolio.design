@@ -179,9 +179,13 @@ button {
 }
 /* this is the top name */
 .name {
-  color: #909090;
+  color: #c8c8c8;
   font-size: 0.9rem;
-  margin-top: 1rem;
+}
+.iconswhite{
+  margin-top: 3rem; /*
+  margin-left: -74.5rem;*/
+  margin-bottom: -5rem;
 }
 
 /*hero banner */
@@ -207,17 +211,22 @@ button {
 .or {
   color: #909090;
 }
+.links {
+  margin: 0 3px;
+}
 .scrollbutton{
     display: block;
-    margin: 0 auto;
+    /*! margin: 0 auto; */
     width: 30%;
     margin-top: -4rem;
+    /*! align-items: right; */
+    margin-left: 13.5rem;
 }
 .links{
     color: #fff;
 }
 .links1{
-  color: #000000;
+  color: #ffffff;
 }
 
 /* the homepage heading padding*/
@@ -245,7 +254,7 @@ h3{
     font-family: "Inter", Helvetica, sans-serif;
     color: #000000;
     line-height: 1.1em;
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-variation-settings: "wght" 700;
 }
 
@@ -301,6 +310,7 @@ h3{
     background-color: #492B1B; 
     padding: 0rem 0rem 1rem 0rem;
 }
+
 .intropara1{
     color: #fff;
     padding: 0.9rem 1rem;
@@ -404,26 +414,28 @@ margin-bottom: 2rem;
 
 /*footer */
 footer{
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-    display: flex;
-    flex-direction: row;
-    background-color: #fff;
-    box-shadow: inset 1px #000;
-    margin-top: 1rem;
-}
-/*
-.foot1{
+  background-color: #000;
+  color: #fff;
+  margin-top: 3rem;
   padding: 1rem;
-  max-width: 10rem;
-  line-height: 1.4em;
-  margin-top: 2rem;
-  font-size: 0.85rem;
+}
+footer p{
+  font-size: 0.8rem;
+}
+.footercontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.foot1{
+  max-width: 15rem;
+
 }
 .foot2{
-  max-width: 17rem; 
-  margin-top: 3rem;
-  margin-left: 0.5rem;
-}*/
+  max-width: 10rem; 
+  margin-left: 2rem;
+}
 .backtop{
   cursor: pointer;
   display: block;
@@ -434,16 +446,36 @@ footer{
   margin-right: auto;
   width: 15%;
   transform: translateY(-40%); /* Translate the image up by 40% of its own height to vertically center it */
+  margin-top: -1rem;
 }
 /*social icons */
 .sicon {
-  width: 20px; /* Adjust the width value to set the desired size */
-  height: 20px; /* Adjust the height value to maintain the aspect ratio */
+  width: 30px; /* Adjust the width value to set the desired size */
+  height: 30px; /* Adjust the height value to maintain the aspect ratio */
   margin-top: 0.5rem;
+  opacity: 50%;
 }
-.social{
-  margin-left: -0.10rem;
+.sicon:hover {
+  opacity: 100%;
 }
+.sicon:focus {
+  opacity: 100%;
+}
+
+
+.sicon1 {
+  opacity: 50%;
+  width: 30px; 
+  height: 30px; 
+}
+
+.sicon1:hover {
+  opacity: 100%;
+}
+.sicon1:focus {
+  opacity: 100%;
+}
+
 .social ul{
     display: flex; /* Use flexbox to arrange the icons in a row */
     flex-direction: row;
@@ -483,6 +515,7 @@ footer{
   margin-top: 3rem;
 }
 .client{
+  color: #3f3f3f;
   margin-top: 0.5rem;
   font-variation-settings: "wght" 472;
 }
@@ -500,6 +533,79 @@ footer{
 }
 .desktop{
   display: none;
+}
+.software {
+  color: #4f4f4f;}
+/*graphic design page */
+/* Slideshow container */
+.scrool {
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ }
+.slideshow-container {
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+/* Next & previous buttons */
+.prev, .next {
+  top: 38%;
+  cursor: pointer;
+  position: absolute;
+  width: auto;
+  color: #402f65;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 4px;
+  user-select: none;
+  text-align: center;
+
+ 
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 4px;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 1px 2px;
+  background-color: #161237;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #987BD7;
+}
+.nexxt {
+  text-align: center;
+}
+/* Fading animation
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.logos-scrool {
+  margin-top: 3rem;
+  /*! margin-bottom: 1rem; 
+}*/
+.fade-in-out {
+  animation: fade 1s ease-in-out;
+}
+
+@keyframes fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 /* desktop version */
 
@@ -527,7 +633,7 @@ footer{
  /*header logo */
  .header .logo {
   width: 100%;
-  margin-left: 4rem;
+  margin-left: 4.5rem;
   max-width: 10rem;
   margin-bottom: 1rem;
   }
@@ -576,30 +682,35 @@ footer{
       }
 
  .heroone{
-  max-width: 10rem;
-  margin-left: 6rem;
+  /*! max-width: -1rem; */
+  margin-left: 10rem;
  }
  .heroonee{
   max-width: 40rem;
   margin-left: 6rem;
-  /*! padding: 3rem; */
   margin-bottom: 10rem;
  }
+ .herointro {
+  max-width: 30rem;
+}
  .herobanner {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
+  /*! margin: 0 auto; */
   padding: 10rem 1rem 6rem 0rem;
   height: 85vh;
   align-items: center;
+  /*! justify-content: center; */
  }
  .herotwo {
-  max-width: 30rem;
-  margin-left: 35rem;
-  margin-top: 2rem;
+  /*! max-width: 4rem; */
+  margin-left: 7rem;
+  margin-top: -1rem;
  }
  .herotitle {
   font-size: 7rem;
+  /*! text-align-last: right; */
+  text-align: right;
  }
  .herotitle1 {
   font-size: 2.5rem;
@@ -617,29 +728,30 @@ footer{
   /*! padding: 3rem; */
  }
  .name{
-  font-size: 1.4rem;
+  font-size: 1rem;
  }
+
  /*headings */
  h1{
-  font-size: 2.188rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.3;
+  /*font-size: 2.188rem;*/
 }
 h2{
-  font-size: 1.75rem;
+  font-size: 2.4rem;
 }
 h3{
-  font-size: 1.5rem; 
+  font-size: 2rem; 
 }
 .introtitle {
   font-size: 2.063rem;
   font-variation-settings: "wght" 800;
 }
-h3{
-  font-size: 1.5rem;
-}
 .headings{
   padding: 0rem 0 2rem 6.2rem;}
 .headingadditional {
-  padding: 2rem 6.5rem;
+  padding: 4rem 6.5rem;
 }
 
 .portfoliosample1{
@@ -726,7 +838,13 @@ max-width: 30rem;
 
 /*scrool button*/
 .scrollbutton {
-    width: 7%;}
+    width: 7%;
+    margin: -4rem auto 1rem auto;
+}
+.iconswhite {
+  margin-top: 25rem;
+  margin-left: -73rem;
+}
 /*homepage tags portfolio */
 .tags {
   grid-column-gap: 0.625rem;
@@ -749,10 +867,18 @@ max-width: 30rem;
 /*back to top button */
 .backtop {
   width: 5%;
+  margin-top: -4rem;
 }
 footer{
-  padding: 4rem;
+  padding: 3rem;
 }
+footer p{
+  font-size: 1rem;
+}
+.foot2 {
+  max-width: 15rem;
+  margin-left: 40rem;}
+
 /*motion graphics page */
 .motion-con{
   padding: 2rem 3rem 1rem 4.5rem;;
@@ -788,5 +914,20 @@ footer{
 .desktop{
   display: block;
 }
+/*graphic design*/
+.scrools{
+  padding: 6rem 3rem 1rem 11rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /*! gap: 10rem; */
+}
+.prev, .next {
+  top: 39%;
+  font-size: 50px;}
+  .sicon {
+    width: 50px; 
+    height: 50px;  }
 
   }
